@@ -26,6 +26,10 @@ const subjectSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'teacher',
     }
-}, { timestamps: true });
+},  
+{
+     timestamps: true 
+}
+);
 
 export const subject = mongoose.model("subject", subjectSchema);

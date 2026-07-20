@@ -17,6 +17,10 @@ const noticeSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'admin'
     },
-}, { timestamps: true });
+}, 
+{ 
+    timestamps: true 
+}
+);
 
 export const notice = mongoose.model("notice", noticeSchema)

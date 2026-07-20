@@ -44,6 +44,10 @@ const teacherSchema = new mongoose.Schema({
             type: String,
         }
     }]
-}, { timestamps: true });
+},
+{ 
+    timestamps: true 
+}
+);
 
 export const teacher = mongoose.model("teacher", teacherSchema)
